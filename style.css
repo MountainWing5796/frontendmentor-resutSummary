@@ -15,6 +15,7 @@ ol, ul, menu {
 
 .container {
     display: flex;
+    flex-wrap: wrap;
     height: 100vh;
     justify-content: center;
     align-items: center;
@@ -38,13 +39,40 @@ ol, ul, menu {
 #score {
     color: white;
     font-weight: 800;
+    margin-bottom: 10px;
+    font-size: 2rem;
 }
 
 #compliment {
-    color: white;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .circle {
-    /* border-radius: 50%; */
+    margin-top: 20px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
     background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#resultHeading {
+    color: hsl(0, 0%, 80%);
+    font-weight: 700;
+}
+#outOf {
+    color: hsl(0, 0%, 65%);
+}
+#complimentDescription {
+    color: hsl(0, 0%, 85%);
+    /* border: 2px solid white; */
+    text-align: center;
+    width: 300px;
 }
